@@ -1,0 +1,87 @@
+
+header{
+  width: 100%;
+  // height: 100vh;
+  position: absolute;
+  z-index: 100;
+
+
+  &.topbar{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    .navbar{
+      z-index: 100;
+      animation: flyin .2s forwards;
+      // top: 0;
+      background: #fff;
+    }
+  }
+
+  .logo{
+    position: relative;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    // background: rgba(255,255,255,0.3);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.0));
+    // transform: translate(0,-50%);
+
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  nav {
+    height: 100%;
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      height: 100%;
+    }
+    li{
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    a{
+      color: $c_primary;
+      display: block;
+      height: 100%;
+      line-height: 1;
+      padding: 1.5rem 1.5rem 0;
+
+      &:hover{
+        color: lighten($c_primary, 0.25);
+        .line{
+          width: 100%;
+        }
+      }
+    }
+    .line {
+      margin: 0.25rem auto;
+      height: 0.125rem;
+      width: 80%;
+      background: $c_primary;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+
+
+@keyframes flyin {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}

@@ -1,1 +1,124 @@
 // <reference path="../global.scss" />
+
+.nomargin{
+  margin-top: 0;
+}
+
+
+main{
+  img{
+    width: 90%;
+    box-shadow: $shw_standard;
+    margin: 0 auto;
+}   
+}
+
+
+section {
+  position: relative;
+
+  background: white {
+    background-image: linear-gradient(rgba(30, 30, 30, 0.45), rgba(30, 30, 30, 0.45));
+    size: cover;
+    position: center bottom;
+    attachment: fixed;
+  }
+
+  ;
+  width: 100%;
+  min-height: 20vh;
+  padding: 6rem 0;
+
+  // z-index: 10
+  * {
+    z-index: 25;
+    position: relative;
+  }
+
+  // &:first-of-type {
+  //   margin-top: 100vh;
+
+  //   // padding-top: 3rem
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     left: 47vw;
+  //     top: calc(0vh - 3vw);
+  //     background: $c_secondary;
+  //     width: 6vw;
+  //     height: 6vw;
+  //     transform: rotate(45deg);
+  //     z-index: 20;
+  //     box-shadow: $shw_standard;
+  //   }
+  // }
+
+  &.fullheight {
+    min-height: 100vh;
+  }
+
+  &.conic {
+    margin-top: 5.1vh;
+
+    &::before {
+      content: "";
+      width: 200%;
+      background: inherit;
+      transform: rotate(3deg);
+      height: 50vh;
+      position: absolute;
+      top: calc(-3vw - 5.1vh);
+      left: -50%;
+      z-index: 15;
+    }
+
+    &::after {
+      content: "";
+      width: 200%;
+      background: inherit;
+      transform: rotate(-3deg);
+      height: 50vh;
+      position: absolute;
+      bottom: -3vw;
+      left: -50%;
+      z-index: 20;
+    }
+  }
+
+  &.creverse {
+    &::before {
+      transform: rotate(-3deg);
+    }
+
+    &::after {
+      transform: rotate(3deg);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+
+.sec-bg-1 {
+  background-color: $c_sec_bg_1;
+  color: $c_sec_color_1;
+}
+
+.sec-bg-2 {
+  background-color: $c_sec_bg_2;
+  color: $c_sec_color_2;
+}
+
+.sec-bg-3 {
+  background-color: $c_sec_bg_3;
+  color: $c_sec_color_3;
+}
+
+.sec-bg-img {
+  color: $c_sec_color_img;
+}

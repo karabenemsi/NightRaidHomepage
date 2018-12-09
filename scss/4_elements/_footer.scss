@@ -1,1 +1,11 @@
 // <reference path="../global.scss" />
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  small{
+    padding: 1rem;
+  }
+}

@@ -1,10 +1,10 @@
 // <reference path="../global.scss" />
 // Color Theme
-$color_1: #e0730d;
-$color_2: #804400;
+$color_1: #F27612;
+$color_2: #011C41;
 $color_3: #363ABD;
 $color_4: #C7A82D;
-$color_5: #BD582B;
+$color_5: #DA2A04;
 $color_6: #555555;
 $color_7: rgba(0,0,0,0.2);
 $color_8: rgba(0,0,0,0.05);
@@ -44,3 +44,14 @@ $c_divider: $color_12;
     --c-primary: $color_1;
     --c-secondary: $color_2;
 }
+
+ $shw_standard: 0 0 1rem rgba(0,0,0,0.6);
+
+$c_sec_bg_1: #fff;
+$c_sec_color_1: $c_text;
+$c_sec_bg_2: #F27612;
+$c_sec_color_2: $c_text;
+$c_sec_bg_3: #011C41;
+$c_sec_color_3: #fff;
+
+$c_sec_color_img: #ddd;

@@ -5,6 +5,40 @@ html(lang="de")
             title TMS
         link(rel="stylesheet", href="css/main.min.css")
     body
-        main
+
+        header#js-header
+
+            //- .logo
+            //-     img(src="../images/logo.svg")
+
+            .navbar
+                //- .logo
+                //-     img(src="../images/logo.svg")
+                nav
+                    ul
+                        li
+                            a(href="")
+                                span Home
+                                .line
+                        li
+                            a(href="") 
+                                span About
+                                .line
+                        li
+                            a(href="")
+                                span News
+                                .line
+
+        .hero(style="background-image: url('./images/nightraid_background.png')")#js-trigger-header
+
+        main#js_trigger_header
             block content
+
+        footer
+            small &copy; NightRaid 2018
+            small
+                a(href="") Impressum
+            small   
+                a(href="") TeamSpeak
+        
         script(src="js/main.min.js")

@@ -6,7 +6,7 @@
 @import '2_defs/vars';
 @import '2_defs/urls';
 @import '2_defs/mixins';
-@import '2_defs/grid/grid';
+@import '2_defs/grid';
 // 3 - BASICS
 @import '3_basics/body';
 @import '3_basics/selection';
@@ -23,3 +23,4 @@
 @import '4_elements/main';
 @import '4_elements/header';
 @import '4_elements/menu';
+@import '4_elements/hero';
